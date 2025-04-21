@@ -1,0 +1,28 @@
+async function rechercher() {
+    var CIN_user = document.getElementById("CIN_user").value;
+    var Login = document.getElementById("Login").value;
+    var Mot_Pass = document.getElementById("Mot_Pass").value;
+    var Nom = document.getElementById("Nom").value;
+    var Prenom = document.getElementById("Prenom").value;
+    var Telephone = document.getElementById("Telephone").value;
+    var Sexe = document.getElementById("Sexe").value;
+    var Email = document.getElementById("Email").value;
+    var Adresse = document.getElementById("Adresse").value;
+    var Specialite = document.getElementById("Specialite").value;
+    var Niveau = document.getElementById("Niveau").value;
+    var Institut = document.getElementById("Institut").value;
+
+    const rep = await fetch(`http://127.0.0.1:8000/istic2021/etudiant?CIN_user=${CIN_user}&Login=${Login}&Mot_Pass=${Mot_Pass}&Nom=${Nom}&Prenom=${Prenom}&Telephone=${Telephone}&Sexe=${Sexe}&Email=${Email}&Adresse=${Adresse}&Specialite=${Specialite}&Niveau=${Niveau}&Institut=${Institut}`) ;   
+
+    if (rep.ok){
+    rep.json().then((data)=>{ 
+        var table = document.getElementById('tab') ;
+        for(var i=0 ; i<data.length;i++) {
+        table.insertAdjacentHTML("beforeend",` <tr>   <td> ${data[i].CIN_user} </td>  <td> ${data[i].Login} </td> <td> ${data[i].Mot_Pass} </td>  <td> ${data[i].Nom} </td>  <td> ${data[i].Prenom} </td> <td> ${data[i].Telephone} </td> <td> ${data[i].Sexe} </td> <td> ${data[i].Email} </td> <td> ${data[i].Adresse} </td> <td> ${data[i].Specialite} </td> <td> ${data[i].Niveau} </td><td> ${data[i].Institut} </td> </tr>` )
+        }
+    })
+    }
+
+} ;
+document.getElementById('rechercher').addEventListener('click', rechercher);
+

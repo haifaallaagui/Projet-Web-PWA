@@ -1,0 +1,22 @@
+{
+    "start_url": "./index.html",
+    "short_name": "ISTIC2021",
+    "name": "Mini_projet",
+    "description": "LE SITE DE MINI PROJET",
+    "display": "fullscreen",
+    "background_color": " white",
+    "theme_color": "blue",
+    "orientation":"portrait",
+    "icons": [{
+            "src": "./img/icon/tile70x70.png",
+            "type": "image/png",
+            "sizes": "70x70"
+        },
+        {
+            "src": "./img/icon/tile310x310.png",
+            "type": "image/png",
+            "sizes": "310x310"
+        }
+    ]
+
+}

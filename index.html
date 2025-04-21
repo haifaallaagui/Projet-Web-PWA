@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <fieldset>
+
+        <div class="form-group">
+          <label for="CIN_user">CIN_user</label>
+          <input type="text" class="form-control" id="CIN_user">
+        </div>
+        <div class="form-group">
+          <label for="Login">Login</label>
+          <input type="text" class="form-control" id="Login">
+        </div>
+        <div class="form-group">
+          <label for="Mot_Pass">Mot_Pass</label>
+          <input type="text" class="form-control" id="Mot_Pass">
+        </div>
+        <div class="form-group">
+          <label for="Nom">Nom</label>
+          <input type="text" class="form-control" id="Nom">
+        </div>
+        <div class="form-group">
+          <label for="Prenom">Prenom</label>
+          <input type="text" class="form-control" id="Prenom">
+        </div>
+        <div class="form-group">
+          <label for="Telephone">Telephone</label>
+          <input type="text" class="form-control" id="Telephone">
+        </div>
+        <div class="form-group">
+          <label for="Sexe">Sexe</label>
+          <input type="text" class="form-control" id="Sexe">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="text" class="form-control" id="Email">
+        </div>
+        <div class="form-group">
+          <label for="Adresse">Adresse</label>
+          <input type="text" class="form-control" id="Adresse">
+        </div>
+        <div class="form-group">
+          <label for="Specialite">Specialite</label>
+          <input type="text" class="form-control" id="Specialite">
+        </div>
+        <div class="form-group">
+          <label for="Niveau">Niveau</label>
+          <input type="text" class="form-control" id="Niveau">
+        </div>
+        <div class="form-group">
+          <label for="Institut">Institut</label>
+          <input type="text" class="form-control" id="Institut">
+        </div>
+        <br>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" id="rechercher">RECHERCHER</button>
+        </div>
+      </fieldset>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">CIN_user</th>
+          <th scope="col">Login</th>
+          <th scope="col">Mot_Pass</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Prenom</th>
+          <th scope="col">Telephone</th>
+          <th scope="col">Sexe</th>
+          <th scope="col">Email</th>
+          <th scope="col">Adresse</th>
+          <th scope="col">Specialite</th>
+          <th scope="col">Niveau</th>
+          <th scope="col">Institut</th>
+          
+        </tr>
+      </thead>
+      <tbody id="tab">
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <script src="./js/rechercher.js"></script>
+<script src="./js/app.js"></script>
+
+</body>
+
+</html>

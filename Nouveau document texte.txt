@@ -1,0 +1,63 @@
+      Your minimax agent (question 2)
+    """
+
+    def getAction(self, gameState):
+      """
+      # Stores everything about the current state of the game
+      # Stocke tout sur l'état actuel du jeu
+      gameState
+
+     # A globally defined depth that varies depending on the test cases.
+     #Une profondeur définie globalement qui varie en fonction des cas de test.
+     #     It could be as little as 1 or arbitrarily large
+     # Cela peut être aussi petit que 1 ou arbitrairement grand
+     self.depth
+
+     # A locally defined depth that keeps track of how many plies deep I've gone in the tree
+     # Une profondeur définie localement qui permet de suivre le nombre de kilomètres de profondeur que j'ai parcourus dans l'arbre
+     self.myDepth
+
+     # A function that assigns a numeric value as a utility for the current state
+    # Une fonction qui attribue une valeur numérique en tant qu'utilitaire pour l'état actuel
+     #     How this is calculated is moot
+     self.evaluationFunction(gameState)
+
+     # Returns a list of legal actions for an agent
+     # Renvoie une liste d'actions en justice pour un agent
+     #     agentIndex = 0 means Pacman, ghosts are >= 1
+     gameState.getLegalActions(agentIndex)
+
+     # Returns the successor game state after an agent takes an action
+     # Renvoie l'état du jeu successeur après qu'un agent a effectué une action
+     gameState.generateSuccessor(agentIndex, action)
+
+     # Returns the total number of agents in the game
+     # Renvoie le nombre total d'agents dans le jeu
+     gameState.getNumAgents()
+
+     # Returns whether or not the game state is a winning (terminal) state
+     # Renvoie si l'état du jeu est ou non un état gagnant (terminal
+     gameState.isWin()
+
+      # Returns whether or not the game state is a losing (terminal) state
+     # Renvoie si l'état du jeu est ou non un état perdant (terminal)
+     gameState.isLose()
+  
+
+        
+          Returns the minimax action from the current gameState using self.depth
+          and self.evaluationFunction.
+
+          Here are some method calls that might be useful when implementing minimax.
+
+          gameState.getLegalActions(agentIndex):
+            Returns a list of legal actions for an agent
+            agentIndex=0 means Pacman, ghosts are >= 1
+
+          gameState.generateSuccessor(agentIndex, action):
+            Returns the successor game state after an agent takes an action
+
+          gameState.getNumAgents():
+            Returns the total number of agents in the game
+        """
+        "*** YOUR CODE HERE ***"
